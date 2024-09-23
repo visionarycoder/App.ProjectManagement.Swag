@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="8.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Access.Numbers.Service\Access.Numbers.Service.csproj" />
+    <ProjectReference Include="..\Engine.Calculating.Service\Engine.Calculating.Service.csproj" />
+    <ProjectReference Include="..\Ifx.Cli\Ifx.Cli.csproj" />
+    <ProjectReference Include="..\Manager.Content.Contract\Manager.Content.Contract.csproj" />
+    <ProjectReference Include="..\Manager.Content.Service\Manager.Content.Service.csproj" />
+    <ProjectReference Include="..\Resource.Data.NumbersDB\Resource.Data.NumbersDB.csproj" />
+  </ItemGroup>
+
+</Project>
