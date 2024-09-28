@@ -1,4 +1,4 @@
-﻿namespace Engine.Calculating.Service.Helpers;
+﻿namespace Swag.Engine.Calculator.Service.Helpers;
 
 public class SwagCalculator
 {
@@ -10,14 +10,13 @@ public class SwagCalculator
     /// <param name="optimistic"></param>
     /// <param name="mostLikely"></param>
     /// <param name="pessimistic"></param>
-    /// <param name="precision"></param>
-    /// <returns></returns>
-    public async Task<decimal> Calculate(int optimistic, int mostLikely, int pessimistic, int precision = 4)
+    /// <returns>Calculated value</returns>
+    public async Task<int> Calculate(int optimistic, int mostLikely, int pessimistic)
     {
         var numerator = (optimistic + (mostLikely * 4) + pessimistic);
         var result =  numerator / (decimal) 6;
-        result = Math.Round(result, precision);
-        return await Task.FromResult(result);
+        var calculated = (int) Math.Ceiling(result);
+        return await Task.FromResult(calculated);
     }
 
 }

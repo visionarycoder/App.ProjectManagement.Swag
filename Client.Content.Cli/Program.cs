@@ -66,8 +66,8 @@ var contentManager = host.Services.GetRequiredService<ContentManager>();
 try
 {
 
-    ConsoleHelper.Title = "Swag Helper";
-    ConsoleHelper.Description = "Swag Calculator";
+    ConsoleHelper.Title = "ThreePointEstimate Helper";
+    ConsoleHelper.Description = "ThreePointEstimate Calculator";
     ConsoleHelper.ShowHeader();
 
     var stop = false;

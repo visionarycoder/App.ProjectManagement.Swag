@@ -2,5 +2,5 @@
 
 public interface ICalculatingEngine
 {
-    Task<decimal> CalculateSwag(int optimistic, int mostLikely, int pessimistic);
+    Task<double> Calculate(double optimistic, double mostLikely, double pessimistic);
 }

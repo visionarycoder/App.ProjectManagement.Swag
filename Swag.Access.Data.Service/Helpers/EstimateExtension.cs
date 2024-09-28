@@ -1,13 +1,13 @@
-﻿using Access.Numbers.Contract.Models;
+﻿using Swag.Access.Data.Interface.Models;
 
-namespace Access.Numbers.Service.Helpers;
+namespace Swag.Access.Data.Service.Helpers;
 
-public static class SwagExtension
+public static class EstimateExtension
 {
     
-    public static Swag Convert(this Resource.Data.NumbersDB.Models.ThreePointEstimate source)
+    public static Estimate Convert(this Resource.Data.SwagDb.Models.Estimate source)
     {
-        var target = new Swag
+        var target = new Estimate
         {
             Id = source.Id,
             Optimistic = source.Optimistic,
@@ -18,9 +18,9 @@ public static class SwagExtension
         return target;
     }
 
-    public static Resource.Data.NumbersDB.Models.ThreePointEstimate Convert(this Swag source)
+    public static Resource.Data.SwagDb.Models.Estimate Convert(this Estimate source)
     {
-        var target = new Resource.Data.NumbersDB.Models.ThreePointEstimate
+        var target = new Resource.Data.SwagDb.Models.Estimate
         {
             Id = source.Id,
             Optimistic = source.Optimistic,
@@ -31,12 +31,12 @@ public static class SwagExtension
         return target;
     }
 
-    public static IEnumerable<Swag> Convert(this IEnumerable<Resource.Data.NumbersDB.Models.ThreePointEstimate> source)
+    public static IEnumerable<Estimate> Convert(this IEnumerable<Resource.Data.SwagDb.Models.Estimate> source)
     {
         return source.Select(i => i.Convert());
     }
 
-    public static IEnumerable<Resource.Data.NumbersDB.Models.ThreePointEstimate> Convert(this IEnumerable<Swag> source)
+    public static IEnumerable<Resource.Data.SwagDb.Models.Estimate> Convert(this IEnumerable<Estimate> source)
     {
         return source.Select(i => i.Convert());
     }

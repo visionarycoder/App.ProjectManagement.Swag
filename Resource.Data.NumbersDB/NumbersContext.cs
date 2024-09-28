@@ -5,11 +5,13 @@ namespace Resource.Data.NumbersDB;
 
 public class NumbersContext(DbContextOptions<NumbersContext> options) : DbContext(options)
 {
-    public DbSet<Swag> Swags { get; set; }
+
+    public DbSet<ThreePointEstimate> Swags { get; set; } = default!;
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Models.Swag>().ToTable("Swags");
+        modelBuilder.Entity<ThreePointEstimate>().ToTable("Swags");
     }
 
 }

@@ -167,7 +167,7 @@ public class NumbersAccess(ILogger<NumbersAccess> logger, DbContextOptions<Numbe
         try
         {
 
-            var entityEntry = ctx.Remove(new Resource.Data.NumbersDB.Models.Swag { Id = id });
+            var entityEntry = ctx.Remove(new Resource.Data.NumbersDB.Models.ThreePointEstimate { Id = id });
             var count = await ctx.SaveChangesAsync();
             return count != 0;
 

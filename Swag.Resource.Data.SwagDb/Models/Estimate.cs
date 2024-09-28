@@ -1,12 +1,14 @@
-﻿namespace Engine.Calculating.Contract.Models;
+﻿namespace Swag.Resource.Data.SwagDb.Models;
 
-public class ThreePointEstimate
+public class Estimate
 {
+
     public int Id { get; set; }
+
     public int Optimistic { get; set; }
     public int MostLikely { get; set; }
     public int Pessimistic { get; set; }
-    public decimal Calculated { get; set; }
+    public int Calculated { get; set; }
 
 }
 

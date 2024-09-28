@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Swag.Client.ConsoleApp": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
