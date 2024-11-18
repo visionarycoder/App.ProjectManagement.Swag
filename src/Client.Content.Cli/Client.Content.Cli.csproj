@@ -15,9 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Access.Numbers.Service\Access.Numbers.Service.csproj" />
     <ProjectReference Include="..\Engine.Calculating.Service\Engine.Calculating.Service.csproj" />
-    <ProjectReference Include="..\Ifx.Cli\Ifx.Cli.csproj" />
     <ProjectReference Include="..\Manager.Content.Contract\Manager.Content.Contract.csproj" />
     <ProjectReference Include="..\Manager.Content.Service\Manager.Content.Service.csproj" />
     <ProjectReference Include="..\Resource.Data.NumbersDB\Resource.Data.NumbersDB.csproj" />
